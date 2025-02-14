@@ -1,11 +1,11 @@
 # TASK: Write a function that asks for a valid age input and handles invalid inputs.
 
 # Define a function that takes one string parameter
-def get_age(promt: str)->int:
+def get_age(prompt: str)->int:
 # Create a loop that keeps asking for input until a valid age is entered
     while True:
         try:
-            age=int(input("enter age "))# Try to convert the input to an integer
+            age=int(input(prompt))# Try to convert the input to an integer
             if age>0:# If successful, check if the number is positive
                 return age# If valid, return the number
                 break
